@@ -14,24 +14,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="number">5</div>
+        <div class="wrapper" style="display: flex;">
+            <div class="number1">5</div>
+            <div class="number2">4</div>
+            <div class="number3">3</div>
+        </div>
+        
     </div>
 
-
-
-
-    <script>
-        function getRandom(max) {
-            return Math.floor(Math.random() * Math.floor(max));
-        }
-
-        function updateNumber() {
-            var numberElem = document.querySelector('.number');
-            numberElem.innerHTML = getRandom(10);
-        }
-
-        updateNumber();
-    </script>
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
