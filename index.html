@@ -6,26 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Playing With Matches</title>
 
-    <style>
-        .container {
-            width: 70%;
-            margin: auto;
-            padding: 20px;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .number {
-            width: 8%;
-            padding: 4px;
-            font-size: 24px;
-            text-align: center;
-            background-color: blue;
-            color: white;
-        }
+    <style>
+        
     </style>
 </head>
 <body>
     <div class="container">
         <div class="number">5</div>
     </div>
+
+
+
+
+    <script>
+        function getRandom(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        function updateNumber() {
+            var numberElem = document.querySelector('.number');
+            numberElem.innerHTML = getRandom(10);
+        }
+
+        updateNumber();
+    </script>
+
 </body>
 </html>
